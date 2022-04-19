@@ -15,7 +15,7 @@ import com.ttit.myapp.entity.LoginResponse;
 import com.ttit.myapp.util.StringUtils;
 
 import java.util.HashMap;
-
+//*********
 public class LoginActivity extends BaseActivity {
 
     private EditText etAccount;
@@ -42,6 +42,7 @@ public class LoginActivity extends BaseActivity {
                 String account = etAccount.getText().toString().trim();
                 String pwd = etPwd.getText().toString().trim();
                 login(account, pwd);
+                navigateTo(HomeActivity.class);
             }
         });
     }
@@ -92,7 +93,8 @@ public class LoginActivity extends BaseActivity {
 //            return;
 //        }
 //
-//        //第一步创建OKHttpClient
+
+       //第一步创建OKHttpClient
 //        OkHttpClient client = new OkHttpClient.Builder()
 //                .build();
 //        Map m = new HashMap();
